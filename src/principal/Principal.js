@@ -9,10 +9,10 @@ function Principal() {
          <p className="Title">Codesk</p> 
         <ul>
   
-  <li><a href="#Quienes" className="active">¿Quienes somos?</a></li>
-  <li><a href="#Productos"  className="active">Productos</a></li>
-  <li><a href="#Servicios" className="active">Servicios</a></li>
-  <li><a href="#Contactos" className="active">Contactos</a></li>
+  <li><a href="#Quienes" >¿Quienes somos?</a></li>
+  <li><a href="#Productos"  >Productos</a></li>
+  <li><a href="#Servicios" >Servicios</a></li>
+  <li><a href="#Contactos" >Contactos</a></li>
 </ul>
 
 
