@@ -1,0 +1,185 @@
+@font-face{
+  font-family: Anita;
+  src: url(../assets/font/Anita\ semi\ square.ttf);
+
+}
+
+/*
+paleta de colores
+#000B1F azul 
+#F5564E rojo naranja
+#FAB95B amarillo claro
+#E8E2DB gris
+#FFFFFF blanco
+
+*/
+
+.App {
+  text-align: center;
+  background-image: url('./../assets/img/codeskc.png');
+  background-color:  #1b1b1b;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+  min-height: 90vh; 
+
+ 
+/*
+  
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50%;*/
+  
+  
+}
+
+.App-logo {
+  height: 10vmin;
+  pointer-events: none;
+  position: relative;
+}
+.Menu {
+display: flex;
+flex-direction: row;
+background-color:  #1b1b1b;
+color: white;
+position: fixed;
+width: 100vw;
+
+justify-content: space-between;
+}
+.Title{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 10px;
+  padding: 0;
+  overflow: hidden;
+  font-size: 40px;
+  font-family: Anita;
+  
+}
+
+.Quienes {
+  background-color:  #1b1b1be5;
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+padding-top: 50px;
+}
+
+.Producto{
+  background-color:   #1b1b1b;
+  color: white;
+  height: 100vh;
+  padding-top: 50px;
+  display: flex;
+flex-direction: column;
+align-items: center;
+ 
+}
+.Servicios{
+  background-color:    #1b1b1b;
+  color: white;
+  height: 100vh;
+  padding-top: 50px;
+  display: flex;
+flex-direction: column;
+align-items: center;
+ 
+}
+.Contactos{
+  background-color:   #1b1b1b;
+  color: white;
+  height: 100vh;
+  padding-top: 50px;
+  display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+
+ul {
+
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  margin-right: 20px;
+  
+ 
+
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: flex;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  font-family: Anita;
+  text-decoration: none;
+  
+}
+
+li  a:hover {
+  background-color: rgb(75, 164, 236);
+  transition: .5s ;
+}
+
+
+html{
+  scroll-behavior: smooth;
+  
+}
+
+.SeccTitle{
+  font-family: Anita;
+  font-size: 40px;
+  color: #F5564E;
+}
+.Desc{
+  color: white;
+  font-size:  22px;
+  width: 60%;
+}
+
+ /* .active {
+  background-color: rgb(241, 47, 47);
+}*/
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 30s linear;
+  }
+}
+
+.App-header {
+    background-color: #06022793;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(91, 220, 243);
+  padding-top: 50px;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
