@@ -3,26 +3,33 @@
   src: url(../assets/font/Anita\ semi\ square.ttf);
 
 }
+:root{
+  --main-fondo:#0e0e0e;
+  --main-fondoglas:#eff1f552;
+  --main-naranja:#F5564E;
+  --main-yellow:#fea82f;
+  --main-gris:#E8E2DB;
+}
 
 /*
-paleta de colores
-#000B1F azul 
-#F5564E rojo naranja
-#FAB95B amarillo claro
-#E8E2DB gris
+:#000B1F
 #FFFFFF blanco
-
+  #1b1b1b fondo oscuro
 */
 
 .App {
+  /*
   text-align: center;
-  background-image: url('./../assets/img/codeskc.png');
-  background-color:  #1b1b1b;
+  background-image: url('./../assets/img/Recursos.png');
+  background-color:  var(--main-fondo);
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
-  
-  min-height: 90vh; 
+  background-position: center;*/
+  background-color:  var(--main-fondo);
+  min-height: 100vh; 
+display: flex;
+flex-direction: row;
+flex-wrap: wrap-reverse;
 
  
 /*
@@ -42,7 +49,10 @@ paleta de colores
 .Menu {
 display: flex;
 flex-direction: row;
-background-color:  #1b1b1b;
+background-color: var(--main-fondo);
+box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+
+backdrop-filter: blur(10px) saturate(100%) contrast(45%) brightness(130%);
 color: white;
 position: fixed;
 width: 100vw;
@@ -61,43 +71,65 @@ justify-content: space-between;
 }
 
 .Quienes {
-  background-color:  #1b1b1be5;
+  /*background-color:  var(--main-fondoglas);*/
 min-height: 100vh;
+width: 500px;
 display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
 padding-top: 50px;
+flex-shrink: 1;
+flex-grow: 1;
+
+}
+.SeccLogo {
+ 
+min-height: 100vh;
+width: 500px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+padding-top: 50px;
+flex-shrink: 1;
+flex-grow: 1;
+
+}
+.Logo{
+  height: 80vh;
+  width: auto;
 }
 
 .Producto{
-  background-color:   #1b1b1b;
+  background-color:  var(--main-fondo);
   color: white;
   height: 100vh;
   padding-top: 50px;
   display: flex;
 flex-direction: column;
-align-items: center;
+align-items: left;
+
  
 }
 .Servicios{
-  background-color:    #1b1b1b;
+  background-color:  var(--main-fondo);
   color: white;
   height: 100vh;
   padding-top: 50px;
   display: flex;
 flex-direction: column;
-align-items: center;
+align-items: left;
  
 }
 .Contactos{
-  background-color:   #1b1b1b;
+  background-color:  var(--main-fondo);
   color: white;
   height: 100vh;
   padding-top: 50px;
   display: flex;
 flex-direction: column;
-align-items: center;
+align-items: left;
 }
 
 
@@ -119,7 +151,7 @@ li {
 
 li a {
   display: flex;
-  color: white;
+  color: var(--main-gris);
   text-align: center;
   padding: 14px 16px;
   font-family: Anita;
@@ -139,13 +171,20 @@ html{
 }
 
 .SeccTitle{
-  font-family: Anita;
-  font-size: 40px;
-  color: #F5564E;
+   font-family: 'Roboto', sans-serif;
+  font-size: 50px;
+  color: #1ac793;
+  margin-left: 100px;
+}
+.SeccTitle1{
+  font-family: 'Roboto', sans-serif;
+ font-size: 50px;
+ color: #1ac793;
+ 
 }
 .Desc{
-  color: white;
-  font-size:  22px;
+  color:#d6d6d6;
+  font-size:  21px;
   width: 60%;
 }
 

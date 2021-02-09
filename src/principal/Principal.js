@@ -1,5 +1,5 @@
-import logo from '../assets/img/logo.svg';
-import fon from '../assets./img/codesk.png';
+import logo from '../assets/img/Recurso.png';
+import codesk from '../assets/img/Recurso.png';
 import './../css/principal.css';
 
 function Principal() {
@@ -19,60 +19,44 @@ function Principal() {
         </div>  
     <div className="App" id="Quienes">    
       <div className="Quienes">
-      <p className="SeccTitle">
+      <p className="SeccTitle1">
          ¿Quiénes Somos? 
         </p>
         <p className="Desc">
-          Somos una empresa dedicado al desarrollo de sistema 
-          informatico, sitio web. 
+          Somos una empresa de desarrollo de sistemas 
+          informaticos, sitios web y aplicaciones móviles 
+          con las últimas tecnologías, brindando a nuestros clientes
+          las herramientas necesarias para hacer crecer sus negociosos 
+          o servicios.
         </p>
+         </div>
+         <div className="SeccLogo">
+         <img src={logo} className="Logo" alt="logo" />
          </div>
       </div>   
 
       <div className="Producto" id="Productos">
-        <img src={logo} className="App-logo" alt="logo" />
+       
          <p className="SeccTitle">
          Productos
         </p>
-        <img src={logo} className="App-logo" alt="logo" />
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        
       </div>
       <div className="Servicios" id="Servicios">
-        <img src={logo} className="App-logo" alt="logo" />
+   
          <p className="SeccTitle">
        Servicios
         
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+
       </div>
       <div className="Contactos" id="Contactos">
-        <img src={codesk} className="App-logo" alt="logo" />
+      
          <p className="SeccTitle">
         Contactos
         
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      
       </div>
        
        
