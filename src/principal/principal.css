@@ -418,7 +418,7 @@ display: none;
 
   @media  screen and (max-width: 750px) {
     .Quienes{
-      background-image: url(../assets/img/Grupo\ 26.png);
+      background-image: url(../assets/img/Group26.png);
       background-size: cover;
       background-position-y: 100%;
       background-position-x: 100%;
@@ -431,7 +431,7 @@ align-items: center;
 justify-content: center;
     }
     .Producto{
-     background-image: url(../assets/img/Grupo\ 27.png);
+     background-image: url(../assets/img/Group27.png);
      background-size: cover;
      background-position-y: 100%;
      background-position-x: 100%;
@@ -439,13 +439,13 @@ justify-content: center;
     
     }
     .Servicios{
-     background-image: url(../assets/img/Grupo\ 26.png);
+     background-image: url(../assets/img/Group26.png);
      background-size: cover;
      background-position-y: 100%;
      background-repeat: no-repeat;
     }
     .Contactos{
-     background-image: url(../assets/img/Grupo\ 26.png);
+     background-image: url(../assets/img/Group26.png);
      background-size: cover;
      background-position-y: 100%;
      background-repeat: no-repeat;
@@ -562,25 +562,25 @@ justify-content: center;
 
         }
         .Quienes{
-          background-image: url(../assets/img/Grupo\ 26.png);
+          background-image: url(../assets/img/Group26.png);
           background-size: cover;
           background-position-y: 100%;
           background-repeat: no-repeat;
         }
         .Producto{
-         background-image: url(../assets/img/Grupo\ 27.png);
+         background-image: url(../assets/img/Group27.png);
          background-size: cover;
          background-position-y: 100%;
          background-repeat: no-repeat;
         }
         .Servicios{
-         background-image: url(../assets/img/Grupo\ 26.png);
+         background-image: url(../assets/img/Group26.png);
          background-size: cover;
          background-position-y: 100%;
          background-repeat: no-repeat;
         }
         .Contactos{
-         background-image: url(../assets/img/Grupo\ 26.png);
+         background-image: url(../assets/img/Group26.png);
          background-size: cover;
          background-position-y: 100%;
          background-repeat: no-repeat;

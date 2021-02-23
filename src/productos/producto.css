@@ -289,31 +289,7 @@ text-overflow: ellipsis;
       }
 
       @media screen and (max-width: 450px) {
-       .Quienes{
-         background-image: url(../assets/img/Grupo\ 26.png);
-         background-size: cover;
-         background-position-y: 100%;
-         background-repeat: no-repeat;
-       }
-       .Producto{
-        background-image: url(../assets/img/Grupo\ 27.png);
-        background-size: cover;
-        background-position-y: 100%;
-        background-repeat: no-repeat;
-       }
-       .Servicios{
-        background-image: url(../assets/img/Grupo\ 26.png);
-        background-size: cover;
-        background-position-y: 100%;
-        background-repeat: no-repeat;
-       }
-       .Contactos{
-        background-image: url(../assets/img/Grupo\ 26.png);
-        background-size: cover;
-        background-position-y: 100%;
-        background-repeat: no-repeat;
-       }
-    
+      
       .SeccInfo {
        
           min-height: 60%;
