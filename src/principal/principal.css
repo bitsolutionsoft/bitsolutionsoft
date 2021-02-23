@@ -1,0 +1,633 @@
+@font-face{
+  font-family: Anita;
+  src: url(../assets/font/Anita\ semi\ square.ttf);
+
+}
+
+ 
+@import "../css/paleta.css";
+
+
+.contain{
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+
+  overflow: hidden;
+  
+
+}
+
+
+.Menu {
+display: flex;
+flex-direction: row;
+background-color: var(--main-menu);
+
+height: 55px;
+color: rgb(29, 29, 29);
+position: fixed;
+left: 0;
+right: 0;
+
+overflow: hidden;
+z-index: 999;
+justify-content: space-between;
+}
+.Title{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 10px;
+  padding: 0;
+  overflow: hidden;
+  color: var(--main-title);
+  font-size: 35px;
+  font-family: Anita;
+  font-weight: 900;
+
+  
+}
+
+.Quienes {
+  height: 100vh; 
+  width: 100vw;
+  
+ 
+  background-image: url("../assets/img/Grupo 21.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 100%;
+  background-position-x:100%;
+
+ display: flex;
+ flex-direction: row;
+
+
+  
+  
+  
+  
+}
+.QuinesActive {
+  background-image:linear-gradient(45deg,#2D5FA9,#1C284D);
+  color: #ffffff;
+ 
+}
+.SeccQuienes{
+height: 100%;
+width:  50%;
+display: grid;
+place-items: center;
+justify-content: center;
+align-content: center;
+
+}
+.SeccQuienes div{
+  width: 70%;
+
+align-items: center;
+justify-content: center;
+align-content: center;
+
+}
+.SeccLogo {
+  height: 100%;
+width:  50%;
+padding: 5px;
+display: grid;
+place-items: center;
+
+}
+.ItemTitle{
+  display: flex;
+  flex-direction: row;
+}
+.Logo{
+width: 50px;
+height: 50px;
+
+
+
+animation-iteration-count: infinite;
+animation-duration: 30s;
+animation-name:rotate;
+}
+.img1{
+  width: 100%;
+  height: auto;
+
+  }
+@keyframes visible {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+@keyframes visibles {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(-0px);
+  }
+}
+@keyframes rotate{
+  from{
+    transform: rotate(0deg);
+    
+  }
+  to{
+   transform: rotate(360deg);
+   
+  }
+}
+
+.Producto{
+
+ background-image: url("../assets/img/Grupo 22.png");
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position-y: 100%;
+ background-position-x:100%;
+  color: white;
+  min-height: 100vh;
+  
+  display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+}
+.ProductoActive {
+  background-color: var(--main-fondoCard);
+  color: #ffffff;
+ 
+}
+.Servicios{
+  
+  background-image: url("../assets/img/Grupo 23.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 100%;
+  background-position-x:100%;
+  color: white;
+  min-height: 100vh;
+  
+  display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+ 
+}
+.ServicioActive {
+  background-color: var(--main-fondoCard);
+  color: #ffffff;
+ 
+}
+.Contactos{
+  background-image: url("../assets/img/Grupo 24.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 100%;
+  background-position-x:100%;
+
+  color: var(--main-texto);
+  min-height: 100vh;
+  
+  display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+.ContactoActive {
+  background-color:   rgb(0, 174, 255);
+  color: #ffffff;
+ 
+}
+
+.Option {
+
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  margin-right: 20px;
+ 
+ 
+
+}
+
+.Option li {
+  float: left;
+  overflow: hidden;
+  justify-content: center;
+}
+
+.Option li a {
+  display: flex;
+  color: var(--main-title);
+  text-align: center;
+  padding: 10px;
+ font-size: 18px;
+font-weight: 500;
+  text-decoration: none;
+  border-radius: 8px;
+  justify-content: center;
+  align-self: center;
+  
+}
+
+.Option li  a:hover {
+  background-color: var(--active-menu);
+  color: white;
+  transition: .5s ;
+  border-radius: 8px;
+  
+
+}
+  .active {
+  background-color: rgb(219, 47, 47);
+  color: #ebebeb;
+  border-radius: 8px;
+ 
+}
+.Option li .activeOp {
+  background-color: var(--active-menu);
+  color: #ebebeb;
+  border-radius: 8px;
+ 
+}
+
+html{
+  scroll-behavior: smooth;
+  
+}
+
+.SeccTitle{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 50px;
+  color: var(--main-title);
+  margin-left: 10px;
+  text-align: left;
+
+}
+
+.SeccDesc{
+  
+  font-weight: 400;
+  font-size: 20px;
+  color:var(--main-texto);
+  margin-left: 10px;
+  text-align: left;
+}
+.SeccTitle1{
+  font-family: 'Roboto', sans-serif;
+  font-size: 40px;
+  color: #353434;
+  margin-bottom: 10px;
+  /*
+animation-iteration-count: infinite;
+animation-delay: 2;
+  animation-name: visible;
+animation-duration: 4s;*/
+ 
+}
+.Desc{
+  color:#727070;
+  font-size:  21px;
+  width: 98%;
+}
+
+.containPro{
+display: flex;
+
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+width: 100vw;
+padding-left: 50px;
+padding-right: 50px;
+
+overflow-y: auto;
+overflow-x: hidden;
+}
+
+.seccPro{
+ 
+width: 280px;
+height: 286px;
+background-color: #eeeeee;
+/*background-image:  linear-gradient( 45deg, rgb(25, 202, 149), rgb(6, 43, 110) );
+*/
+margin: 20px;
+overflow: hidden;
+
+}
+.imgPro{
+  width: 100%;
+  height: 60%;
+  
+
+}
+.seccPro p{
+  margin-left: 20px;
+  margin-right: 20px;
+  color: #17171a;
+}
+.containSer{
+  display: flex;
+  
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  padding-left: 50px;
+  padding-right: 50px;
+ 
+  justify-content: space-around;
+  }
+  .seccSer{
+   
+  width: 280px;
+  height: 286px;
+  background-color: #eeeeee;
+  /*background-image:  linear-gradient( 45deg, rgb(25, 202, 149), rgb(6, 43, 110) );
+  */
+ margin-bottom: 10px;
+  
+  
+  }
+  .seccSer p{
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #17171a;
+  }
+
+  
+.containCon{
+  display: flex;
+  
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+ 
+  }
+  .seccCon{
+   
+  width: 100px;
+  height: 150px;
+  background-color: #eeeeee00;
+  /*background-image:  linear-gradient( 45deg, rgb(25, 202, 149), rgb(6, 43, 110) );
+  */
+  margin: 20px;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  
+  
+  }
+  .DerechoReservado{
+    margin-bottom: 0;
+    align-self:center;
+    
+  }
+
+  .ButtonMenu{
+padding: 10px;
+cursor: pointer;
+float: right;
+display: none;
+  }
+
+  @media  screen and (max-width: 750px) {
+    .Quienes{
+      background-image: url(../assets/img/Grupo\ 26.png);
+      background-size: cover;
+      background-position-y: 100%;
+      background-position-x: 100%;
+      background-repeat: no-repeat;
+      height: 100vh;
+  padding-top: 30px;
+  display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+    }
+    .Producto{
+     background-image: url(../assets/img/Grupo\ 27.png);
+     background-size: cover;
+     background-position-y: 100%;
+     background-position-x: 100%;
+     background-repeat: no-repeat;
+    
+    }
+    .Servicios{
+     background-image: url(../assets/img/Grupo\ 26.png);
+     background-size: cover;
+     background-position-y: 100%;
+     background-repeat: no-repeat;
+    }
+    .Contactos{
+     background-image: url(../assets/img/Grupo\ 26.png);
+     background-size: cover;
+     background-position-y: 100%;
+     background-repeat: no-repeat;
+    }
+ 
+   
+    .SeccQuienes{
+    height: 50%;
+    width:  100%;
+    
+    align-self: center;
+    justify-content: center;
+    
+    }
+    .SeccLogo {
+    height: 50%;
+  
+    width:  100%;
+    display: grid;
+    place-items: center;
+ position: absolute;
+ z-index: -1;
+    
+    }
+    .Logo{
+      height: 50px;
+      width: 50px;
+    
+    }
+    .ButtonMenu{
+      padding: 10px;
+      cursor: pointer;
+      float: right;
+      display: initial;
+        }
+        
+        .OptionShow{
+          position: fixed;
+          width: 60%;
+          background-color: var(--side-bar);
+          
+          padding-top: 50px;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          right: 0;
+          margin-right: 0;
+          text-align: center;
+          transition: .5s;
+
+        }
+        .Option li a{
+          color: white;
+        }
+        
+       
+        .OptionHide{
+         display: none;
+
+        }
+  }
+  @media  screen and (max-width: 400px) {
+   
+   
+    .SeccQuienes{
+    height: 50%;
+    width:  100%;
+    
+    align-self: center;
+    justify-content: center;
+    
+    }
+    .SeccLogo {
+    height: 50%;
+  
+    width:  100%;
+    display: grid;
+    place-items: center;
+ 
+    
+    }
+    .Logo{
+      height: 50px;
+      width: 50px;
+    
+    }
+    .ButtonMenu{
+      padding: 10px;
+      cursor: pointer;
+      float: right;
+      display: initial;
+        }
+        .Menu{
+          background-color: var(--back-burger);
+        }
+        
+        .OptionShow{
+          position: fixed;
+          width: 40%;
+          background-color: rgb(32, 32, 32);
+          padding-top: 60px;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          right: 0;
+          margin-right: 0;
+          text-align: center;
+          transition: .5s;
+
+        }
+
+        .OptionHide{
+         display: none;
+
+        }
+        .Quienes{
+          background-image: url(../assets/img/Grupo\ 26.png);
+          background-size: cover;
+          background-position-y: 100%;
+          background-repeat: no-repeat;
+        }
+        .Producto{
+         background-image: url(../assets/img/Grupo\ 27.png);
+         background-size: cover;
+         background-position-y: 100%;
+         background-repeat: no-repeat;
+        }
+        .Servicios{
+         background-image: url(../assets/img/Grupo\ 26.png);
+         background-size: cover;
+         background-position-y: 100%;
+         background-repeat: no-repeat;
+        }
+        .Contactos{
+         background-image: url(../assets/img/Grupo\ 26.png);
+         background-size: cover;
+         background-position-y: 100%;
+         background-repeat: no-repeat;
+        }
+     
+        
+.Producto{
+  /*background-color:  var(--main-fondo);*/
+
+  color: white;
+  min-height: 100vh;
+  padding-top: 30px;
+  display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+.Servicios{
+  
+  color: white;
+  min-height: 100vh;
+  padding-top: 20px;
+  display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+ 
+}
+
+.Contactos{
+  
+  color: white;
+  min-height: 100vh;
+  padding-top: 20px;
+  display: flex;
+flex-direction: column;
+align-items: center;
+
+}
+.SeccTitle1{
+  font-size: 30px;
+}
+.Desc{
+  font-size: 15px;
+}
+        
+    
+  }
+ 

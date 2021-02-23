@@ -1,0 +1,363 @@
+@import "../css/paleta.css";
+
+.container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+     padding-left: 10px;
+     padding-right: 10px;
+      background-color: #c28eb700;
+  }
+
+.containerSlide{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  margin-top: 5px;
+
+  
+}
+.containerSlide .left{
+flex: 5%;
+height: 100%;
+display: grid;
+place-items: center;
+cursor: pointer;
+
+}
+.containerSlide .center{
+    flex: 90%;
+    height: 100%;
+    
+    }
+    .containerSlide .right{
+        flex: 5%;
+        height: 100%;
+        
+display: grid;
+place-items: center;
+cursor: pointer;
+        }
+        .containDots{
+      
+          
+          display: flex;
+          flex-direction: row;
+         justify-content: center;
+         position: relative;
+         
+         z-index: 2;
+         
+
+        }
+        .dots{
+          background-color: rgb(215, 241, 255);
+          cursor: pointer;
+          border-radius: 50%;
+          min-width: 15px;
+          height: 15px;
+          margin-left: 2.5px;
+          margin-right: 2.5px;
+        }
+        .dotsActive{
+          background-color: rgba(0, 132, 255, 0.815); 
+        }
+
+.innerContainer{
+    height: 90%;
+    width: 100%;
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ background-color: rgba(3, 3, 36, 0.397);
+ 
+}
+
+.SeccInfo {
+ 
+    min-height: 100%;
+    min-width:  50%;
+    display: grid;
+    place-items: center; 
+    flex-grow: 1;
+    
+    padding-left: 20px;
+    
+    }
+.SeccImgPro {
+ 
+  min-height: 100%;
+  min-width:  50%;
+    display: grid;
+place-items: center;
+    
+    flex-grow: 1;
+    
+    
+    }
+    .ImgPro{
+      height: 100%;
+      width:100%;
+      
+    }
+    .seccButton{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+      .TitleItem{
+        font-family: 'Roboto', sans-serif;
+       font-size: 35px;
+       color: #ffffff;
+       
+       
+      }
+      .ItemDesc{
+        color:#d6d6d6;
+        font-size:  19px;
+        width: 60%;
+      }
+      .btnInfo{
+            
+        text-decoration: none;
+        color: black;
+        background: white;
+        font-size: 15px;
+        font-weight: 700;
+        min-height: 25px;
+        min-width: 100px;
+        text-align: center;
+        align-self: center;
+        align-content: center;
+        align-items: center;
+        padding:5px;
+        border-radius: 30px;
+        text-transform: uppercase;
+        word-spacing: 5px;
+        letter-spacing: 2px;
+        -webkit-transition: box-shadow .3s, opacity .6s 1s, -webkit-transform .6s 1s;
+        -moz-transition: box-shadow .3s, opacity .6s 1s, -moz-transform .6s 1s;
+        -o-transition: box-shadow .3s, opacity .6s 1s, -o-transform .6s 1s;
+        transition: box-shadow .3s, opacity .6s 1s, transform .6s 1s;
+        
+      }
+
+.Card{
+  width: 300px;
+  height: 390px;
+  background-color: var(--main-fondoCard);
+ border-radius: 5px;
+  margin: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.23), 0 6px 20px 0 rgba(0, 0, 0, 0.23);
+}
+
+.Cards{
+  width: 300px;
+  height: 390px;
+ background-color: var(--main-fondoCard);
+  margin: auto;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.23), 0 6px 20px 0 rgba(0, 0, 0, 0.23);
+ 
+}
+.imgCard{
+  
+width: auto;
+height: 200px;
+display: block;
+margin: auto;
+align-self: center;
+align-content: center;
+}
+.imgCard2{
+  width: 100%;
+  height: 200px;
+  align-self: center;
+  align-content: center;
+  
+  }
+.titleCard{
+color: var(--main-title);
+width: 300px;
+font-size: 18px;
+font-weight: 700;
+margin-left: 5px;
+}
+.descCard{
+color: var(--main-texto);
+
+height: 65px;
+margin-left: 5px;
+width: 280px;
+white-space: normal;
+overflow: hidden;
+text-overflow: ellipsis;
+}
+.buttonCard{ 
+  text-decoration: none;
+  color: rgb(247, 243, 243);
+  margin-right: 10px;
+  background: var(--main-btnInfo);
+  font-size: 15px;
+  font-weight: 700;
+  float: right;
+  min-height: 25px;
+  min-width: 100px;
+  text-align: center;
+  align-self: right;
+  align-content: center;
+  align-items: center;
+  padding:5px;
+  border-radius: 30px;
+  text-transform: uppercase;
+  word-spacing: 5px;
+  letter-spacing: 2px;
+  -webkit-transition: box-shadow .3s, opacity .6s 1s, -webkit-transform .6s 1s;
+  -moz-transition: box-shadow .3s, opacity .6s 1s, -moz-transform .6s 1s;
+  -o-transition: box-shadow .3s, opacity .6s 1s, -o-transform .6s 1s;
+  transition: box-shadow .3s, opacity .6s 1s, transform .6s 1s;
+}
+
+
+      @media screen and (max-width: 700px) {
+        .container{
+          height: 90%;
+          width: 100%;
+        
+            background-color: #c28eb700;
+        }
+        .innerContainer{
+          height: 90%;
+          width: 100%;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       background-color: rgba(3, 3, 36, 0.397);
+       
+       
+      }
+    
+      .SeccInfo {
+       
+          min-height: 60%;
+          min-width:  100%;
+          display: grid;
+          place-items: center; 
+          
+          
+          padding-left: 20px;
+          
+          }
+      .SeccImgPro {
+       
+        min-height: 40%;
+        min-width:  100%;
+          display: grid;
+      place-items: center;
+          
+     
+          
+          
+          }
+          .ImgPro{
+            height: 100%;
+            width:100%;
+            
+          }
+          .seccButton{
+              display: flex;
+              flex-direction: column;
+              width: 100%;
+          }
+       
+            .TitleItem{
+              font-family: 'Roboto', sans-serif;
+             font-size: 28px;
+             color: #ffffff;
+             
+             
+            }
+            .ItemDesc{
+              color:#d6d6d6;
+              font-size:  16px;
+              width: 80%;
+            
+            }
+      }
+
+      @media screen and (max-width: 450px) {
+       .Quienes{
+         background-image: url(../assets/img/Grupo\ 26.png);
+         background-size: cover;
+         background-position-y: 100%;
+         background-repeat: no-repeat;
+       }
+       .Producto{
+        background-image: url(../assets/img/Grupo\ 27.png);
+        background-size: cover;
+        background-position-y: 100%;
+        background-repeat: no-repeat;
+       }
+       .Servicios{
+        background-image: url(../assets/img/Grupo\ 26.png);
+        background-size: cover;
+        background-position-y: 100%;
+        background-repeat: no-repeat;
+       }
+       .Contactos{
+        background-image: url(../assets/img/Grupo\ 26.png);
+        background-size: cover;
+        background-position-y: 100%;
+        background-repeat: no-repeat;
+       }
+    
+      .SeccInfo {
+       
+          min-height: 60%;
+          min-width:  100%;
+          display: grid;
+          place-items:start center;
+        
+          
+          padding-left: 20px;
+          
+          }
+      .SeccImgPro {
+       
+        min-height: 40%;
+        min-width:  100%;
+          display: grid;
+      place-items: center;
+          
+        
+          
+          
+          }
+          .ImgPro{
+            height: 100%;
+            width:100%;
+            
+          }
+          .seccButton{
+              display: flex;
+              flex-direction: column;
+              width: 100%;
+          }
+       
+            .TitleItem{
+              font-family: 'Roboto', sans-serif;
+             font-size: 15px;
+             color: #ffffff;
+             
+             
+            }
+            .ItemDesc{
+              color:#d6d6d6;
+              font-size:  12px;
+              width: 100%;
+            
+            }
+      }
