@@ -416,18 +416,20 @@ float: right;
 display: none;
   }
 
-  @media  screen and (max-width: 750px) {
+  @media  screen and (max-width: 750px )  {
     .Quienes{
       background-image: url(../assets/img/Group26.png);
       background-size: cover;
       background-position-y: 100%;
       background-position-x: 100%;
       background-repeat: no-repeat;
-      height: 100vh;
-  padding-top: 30px;
+     min-height: 100vh;
+ 
   display: flex;
+  
 flex-direction: column;
-align-items: center;
+align-items: flex-end;
+align-content: center;
 justify-content: center;
     }
     .Producto{
@@ -453,28 +455,38 @@ justify-content: center;
  
    
     .SeccQuienes{
-    height: 50%;
+    height: 40%;
     width:  100%;
     
-    align-self: center;
+    
     justify-content: center;
+  
+    
     
     }
     .SeccLogo {
-    height: 50%;
+      
+    height: 40%;
+    width: 100%;
   
-    width:  100%;
+    
     display: grid;
     place-items: center;
- position: absolute;
- z-index: -1;
+
+
     
+    }
+    .img1{
+      top: 0;
+      height: 300px;
+      width: auto;
     }
     .Logo{
       height: 50px;
       width: 50px;
     
     }
+   
     .ButtonMenu{
       padding: 10px;
       cursor: pointer;
@@ -507,11 +519,11 @@ justify-content: center;
 
         }
   }
-  @media  screen and (max-width: 400px) {
+  @media  screen and (max-width: 400px ) {
    
    
     .SeccQuienes{
-    height: 50%;
+    height: 60%;
     width:  100%;
     
     align-self: center;
@@ -519,13 +531,17 @@ justify-content: center;
     
     }
     .SeccLogo {
-    height: 50%;
+    height: 40%;
   
     width:  100%;
     display: grid;
     place-items: center;
  
     
+    }
+    .img1{
+      height: 200px;
+      width: auto;
     }
     .Logo{
       height: 50px;
@@ -539,12 +555,14 @@ justify-content: center;
       display: initial;
         }
         .Menu{
-          background-color: var(--back-burger);
+          background-color: var(--main-menu);
         }
+       
+        
         
         .OptionShow{
           position: fixed;
-          width: 40%;
+          width: 60%;
           background-color: rgb(32, 32, 32);
           padding-top: 60px;
           height: 100%;
@@ -566,6 +584,7 @@ justify-content: center;
           background-size: cover;
           background-position-y: 100%;
           background-repeat: no-repeat;
+          min-height: 100vh;
         }
         .Producto{
          background-image: url(../assets/img/Group27.png);
@@ -622,12 +641,64 @@ align-items: center;
 
 }
 .SeccTitle1{
-  font-size: 30px;
+  font-size: 28px;
 }
 .Desc{
-  font-size: 15px;
+  font-size: 18px;
 }
         
     
   }
+  @media screen and (orientation:landscape) {
+    .Quienes{
+      background-image: url(../assets/img/Grupo\ 21.png);
+      background-size: cover;
+      background-position-y: 100%;
+      background-position-x: 100%;
+      background-repeat: no-repeat;
+     height: 100vh;
+     width: 100vw;
  
+  display: flex;
+  
+flex-direction: row;
+align-items: flex-end;
+align-content: center;
+justify-content: center;
+
+    }
+    .SeccQuienes{
+      height: 100%;
+      width:  65%;
+      
+      
+      justify-content: center;
+    
+      
+      
+      }
+      .SeccLogo {
+        
+      height: 100%;
+      width: 35%;
+    
+      
+      display: grid;
+      place-items: center;
+  
+  
+      
+      }
+      .img1{
+        top: 0;
+        height: auto;
+        width: 100%;
+      }
+      
+.SeccTitle1{
+  font-size: 26px;
+}
+.Desc{
+  font-size: 16px;
+}
+  }
