@@ -136,7 +136,7 @@ setoptMenu(opcion)
       <div className="Producto" id="Productos"  
       onMouseEnter={()=>active(2)}
       >
-        <p className="SeccTitle1">Productos</p>
+        <p className="SeccTitle">Productos</p>
         <p className="SeccDesc">Contamos con los mejores productos, para hacer que su negocio este a la varguarda de la tecnología.</p>
      <Producto/>
       </div>

@@ -13,26 +13,60 @@
   right: 0;
   top: 0;
   bottom: 0;
-
+overflow-y: scroll;
+scroll-snap-type: y mandatory;
   overflow: hidden;
-  
 
 }
+/**personalizar scrollbar*/
 
+.contain::-webkit-scrollbar{
+  width: 8px;
+  height: 8px;
+  display: none;
+  background: rgba(204, 204, 204, 0);
+  border-radius:  4px;
+}
+
+.contain::-webkit-scrollbar-thumb {
+background: rgb(221, 239, 250);
+border-radius: 4px;
+}
+
+.contain::-webkit-scrollbar-thumb:hover {
+background: #d71ff0;
+box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.contain::-webkit-scrollbar-thumb:active {
+background: #d71ff0;
+}
+
+.contain::-webkit-scrollbar-track {
+  background: #e1e1e1;
+  border-radius: 4px;
+}
+
+.contain::-webkit-scrollbar-track:hover,
+.contain::-webkit-scrollbar-track:active {
+background: #d4d4d4;
+}
+/**fin de la personalización del scrollbar*/
 
 .Menu {
 display: flex;
 flex-direction: row;
 background-color: var(--main-menu);
 
-height: 55px;
+height: 50px;
 color: rgb(29, 29, 29);
+
 position: fixed;
 left: 0;
 right: 0;
 
 overflow: hidden;
-z-index: 999;
+
 justify-content: space-between;
 }
 .Title{
@@ -49,55 +83,54 @@ justify-content: space-between;
   
 }
 
-.Quienes {
-  height: 100vh; 
-  width: 100vw;
+
+
+.Option {
+
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  margin-right: 20px;
+  padding-top: 5px;
+}
+
+.Option li {
+  float: left;
+  overflow: hidden;
+  justify-content: center;
+}
+
+.Option li a {
+  display: flex;
+  color: var(--main-title);
+  text-align: center;
+  padding: 8px;
+ font-size: 18px;
+ 
+font-weight: 500;
+  text-decoration: none;
+  
+  justify-content: center;
+  align-self: center;
+  
+}
+
+.Option li  a:hover {
+  background-color: var(--active-menu);
+  color: white;
+  transition: .5s ;
+  
+  
+
+}
+ 
+
+.Option li .activeOp {
+  background-color: var(--active-menu);
+  color: #ebebeb;
   
  
-  background-image: url("../assets/img/Grupo 21.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position-y: 100%;
-  background-position-x:100%;
-
- display: flex;
- flex-direction: row;
-
-
-  
-  
-  
-  
-}
-.QuinesActive {
-  background-image:linear-gradient(45deg,#2D5FA9,#1C284D);
-  color: #ffffff;
- 
-}
-.SeccQuienes{
-height: 100%;
-width:  50%;
-display: grid;
-place-items: center;
-justify-content: center;
-align-content: center;
-
-}
-.SeccQuienes div{
-  width: 70%;
-
-align-items: center;
-justify-content: center;
-align-content: center;
-
-}
-.SeccLogo {
-  height: 100%;
-width:  50%;
-padding: 5px;
-display: grid;
-place-items: center;
-
 }
 .ItemTitle{
   display: flex;
@@ -106,18 +139,13 @@ place-items: center;
 .Logo{
 width: 50px;
 height: 50px;
-
-
-
 animation-iteration-count: infinite;
 animation-duration: 30s;
 animation-name:rotate;
 }
-.img1{
-  width: 100%;
-  height: auto;
+/** final del menu*/
+/** animacions */
 
-  }
 @keyframes visible {
   0% {
     opacity: 0.5;
@@ -153,6 +181,73 @@ animation-name:rotate;
   }
 }
 
+/** final de las animaciones*/
+
+html{
+  scroll-behavior: smooth;
+  
+}
+
+
+
+
+.Quienes {
+  height: 100vh; 
+  width: 100vw;
+  
+ 
+  background-image: url("../assets/img/Grupo 21.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 100%;
+  background-position-x:100%;
+
+ display: flex;
+ flex-direction: row;
+
+scroll-snap-align: start;
+  
+  
+  
+  
+}
+.QuinesActive {
+  background-image:linear-gradient(45deg,#2D5FA9,#1C284D);
+  color: #ffffff;
+ 
+}
+.SeccQuienes{
+height: 100%;
+width:  50%;
+display: grid;
+place-items: center;
+justify-content: center;
+align-content: center;
+
+}
+.SeccQuienes div{
+  width: 70%;
+
+align-items: center;
+justify-content: center;
+align-content: center;
+
+}
+.SeccLogo {
+  height: 100%;
+width:  50%;
+padding: 5px;
+display: grid;
+place-items: center;
+
+}
+
+
+.img1{
+  width: 100%;
+  height: auto;
+
+  }
 .Producto{
 
  background-image: url("../assets/img/Grupo 22.png");
@@ -160,20 +255,17 @@ animation-name:rotate;
  background-size: cover;
  background-position-y: 100%;
  background-position-x:100%;
-  color: white;
-  min-height: 100vh;
+ padding-top: 20px;
+  min-height: 90vh;
   
   display: flex;
 flex-direction: column;
 align-items: center;
-justify-content: center;
+justify-content: space-around;
+scroll-snap-align: center;
 
 }
-.ProductoActive {
-  background-color: var(--main-fondoCard);
-  color: #ffffff;
- 
-}
+
 .Servicios{
   
   background-image: url("../assets/img/Grupo 23.png");
@@ -183,16 +275,11 @@ justify-content: center;
   background-position-x:100%;
   color: white;
   min-height: 100vh;
-  
+  scroll-snap-align: center;
   display: flex;
 flex-direction: column;
 align-items: center;
-justify-content: center;
- 
-}
-.ServicioActive {
-  background-color: var(--main-fondoCard);
-  color: #ffffff;
+justify-content: space-around;
  
 }
 .Contactos{
@@ -201,7 +288,7 @@ justify-content: center;
   background-size: cover;
   background-position-y: 100%;
   background-position-x:100%;
-
+  scroll-snap-align: end;
   color: var(--main-texto);
   min-height: 100vh;
   
@@ -210,92 +297,32 @@ flex-direction: column;
 align-items: center;
 justify-content: center;
 }
-.ContactoActive {
-  background-color:   rgb(0, 174, 255);
-  color: #ffffff;
- 
-}
-
-.Option {
-
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  margin-right: 20px;
- 
- 
-
-}
-
-.Option li {
-  float: left;
-  overflow: hidden;
-  justify-content: center;
-}
-
-.Option li a {
-  display: flex;
-  color: var(--main-title);
-  text-align: center;
-  padding: 10px;
- font-size: 18px;
-font-weight: 500;
-  text-decoration: none;
-  border-radius: 8px;
-  justify-content: center;
-  align-self: center;
-  
-}
-
-.Option li  a:hover {
-  background-color: var(--active-menu);
-  color: white;
-  transition: .5s ;
-  border-radius: 8px;
-  
-
-}
-  .active {
-  background-color: rgb(219, 47, 47);
-  color: #ebebeb;
-  border-radius: 8px;
- 
-}
-.Option li .activeOp {
-  background-color: var(--active-menu);
-  color: #ebebeb;
-  border-radius: 8px;
- 
-}
-
-html{
-  scroll-behavior: smooth;
-  
-}
 
 .SeccTitle{
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
-  font-size: 50px;
+  font-size: 40px;
   color: var(--main-title);
-  margin-left: 10px;
   text-align: left;
+ /** background-color: rgba(255, 255, 255, 0.37);
+  border-radius: 5px;
+  backdrop-filter: blur(2px);*/
 
 }
 
 .SeccDesc{
-  
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
+  top: 0;
+  
   color:var(--main-texto);
-  margin-left: 10px;
   text-align: left;
 }
+
 .SeccTitle1{
   font-family: 'Roboto', sans-serif;
   font-size: 40px;
-  color: #353434;
+  color: var(--main-title);
   margin-bottom: 10px;
   /*
 animation-iteration-count: infinite;
@@ -305,79 +332,11 @@ animation-duration: 4s;*/
  
 }
 .Desc{
-  color:#727070;
-  font-size:  21px;
+  color:var(--main-texto);
+  font-size:  20px;
   width: 98%;
 }
 
-.containPro{
-display: flex;
-
-flex-direction: row;
-flex-wrap: wrap;
-justify-content: center;
-align-items: center;
-width: 100vw;
-padding-left: 50px;
-padding-right: 50px;
-
-overflow-y: auto;
-overflow-x: hidden;
-}
-
-.seccPro{
- 
-width: 280px;
-height: 286px;
-background-color: #eeeeee;
-/*background-image:  linear-gradient( 45deg, rgb(25, 202, 149), rgb(6, 43, 110) );
-*/
-margin: 20px;
-overflow: hidden;
-
-}
-.imgPro{
-  width: 100%;
-  height: 60%;
-  
-
-}
-.seccPro p{
-  margin-left: 20px;
-  margin-right: 20px;
-  color: #17171a;
-}
-.containSer{
-  display: flex;
-  
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  padding-left: 50px;
-  padding-right: 50px;
- 
-  justify-content: space-around;
-  }
-  .seccSer{
-   
-  width: 280px;
-  height: 286px;
-  background-color: #eeeeee;
-  /*background-image:  linear-gradient( 45deg, rgb(25, 202, 149), rgb(6, 43, 110) );
-  */
- margin-bottom: 10px;
-  
-  
-  }
-  .seccSer p{
-    margin-left: 20px;
-    margin-right: 20px;
-    color: #17171a;
-  }
-
-  
 .containCon{
   display: flex;
   
@@ -649,7 +608,10 @@ align-items: center;
         
     
   }
-  @media screen and (orientation:landscape) {
+
+  
+  /*
+  @media  screen and  (orientation:landscape) {
     .Quienes{
       background-image: url(../assets/img/Grupo\ 21.png);
       background-size: cover;
@@ -701,4 +663,4 @@ justify-content: center;
 .Desc{
   font-size: 16px;
 }
-  }
+  }*/
