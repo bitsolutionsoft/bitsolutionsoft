@@ -1,5 +1,5 @@
 import {useEffect, useState} from 'react'
-import logo from '../assets/img/Recurso7.png';
+import logo from '../assets/img/Recurso9.svg';
 import img1 from '../assets/img/img1.png';
 import {FaPhoneAlt,FaFacebookSquare,FaWhatsapp,FaRegEnvelope,FaBars} from 'react-icons/fa';
 import './principal.css';
@@ -121,8 +121,7 @@ setoptMenu(opcion)
           Somos una empresa de desarrollo de sistemas 
           informaticos, sitios web y aplicaciones móviles 
           con las últimas tecnologías, brindando a nuestros clientes
-          las herramientas necesarias para hacer crecer sus negociosos 
-          o servicios.
+          las herramientas necesarias para hacer crecer su negocio.
         </p>
         </div>
          </div>

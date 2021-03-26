@@ -75,7 +75,7 @@ justify-content: space-between;
   margin-left: 10px;
   padding: 0;
   overflow: hidden;
-  color: var(--main-title);
+  color: var(--main-title1);
   font-size: 35px;
   font-family: Anita;
   font-weight: 900;
@@ -103,7 +103,7 @@ justify-content: space-between;
 
 .Option li a {
   display: flex;
-  color: var(--main-title);
+  color: var(--main-title1);
   text-align: center;
   padding: 8px;
  font-size: 18px;
@@ -139,9 +139,10 @@ font-weight: 500;
 .Logo{
 width: 50px;
 height: 50px;
+/*
 animation-iteration-count: infinite;
 animation-duration: 30s;
-animation-name:rotate;
+animation-name:rotate;*/
 }
 /** final del menu*/
 /** animacions */
@@ -196,7 +197,7 @@ html{
   width: 100vw;
   
  
-  background-image: url("../assets/img/Grupo 21.png");
+  background-image: url("../assets/img/Grupo 21.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: 100%;
@@ -236,7 +237,7 @@ align-content: center;
 .SeccLogo {
   height: 100%;
 width:  50%;
-padding: 5px;
+
 display: grid;
 place-items: center;
 
@@ -244,13 +245,14 @@ place-items: center;
 
 
 .img1{
-  width: 100%;
-  height: auto;
+  width: 500px;
+  height: 500px;
+  bottom: 0;
 
   }
 .Producto{
 
- background-image: url("../assets/img/Grupo 22.png");
+ background-image: url("../assets/img/Grupo 22.svg");
  background-repeat: no-repeat;
  background-size: cover;
  background-position-y: 100%;
@@ -268,7 +270,7 @@ scroll-snap-align: center;
 
 .Servicios{
   
-  background-image: url("../assets/img/Grupo 23.png");
+  background-image: url("../assets/img/Grupo 23.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: 100%;
@@ -283,7 +285,7 @@ justify-content: space-around;
  
 }
 .Contactos{
-  background-image: url("../assets/img/Grupo 24.png");
+  background-image: url("../assets/img/Grupo 22.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: 100%;
@@ -322,7 +324,7 @@ justify-content: center;
 .SeccTitle1{
   font-family: 'Roboto', sans-serif;
   font-size: 40px;
-  color: var(--main-title);
+  color: var(--main-title1);
   margin-bottom: 10px;
   /*
 animation-iteration-count: infinite;
@@ -332,7 +334,7 @@ animation-duration: 4s;*/
  
 }
 .Desc{
-  color:var(--main-texto);
+  color:var(--main-texto1);
   font-size:  20px;
   width: 98%;
 }
@@ -377,11 +379,11 @@ display: none;
 
   @media  screen and (max-width: 750px )  {
     .Quienes{
-      background-image: url(../assets/img/Group26.png);
+  /*    background-image: url("../assets/img/Group26.png");
       background-size: cover;
       background-position-y: 100%;
       background-position-x: 100%;
-      background-repeat: no-repeat;
+      background-repeat: no-repeat;*/
      min-height: 100vh;
  
   display: flex;
@@ -391,8 +393,8 @@ align-items: flex-end;
 align-content: center;
 justify-content: center;
     }
-    .Producto{
-     background-image: url(../assets/img/Group27.png);
+  /*  .Producto{
+     background-image: url("../assets/img/Group26.png");
      background-size: cover;
      background-position-y: 100%;
      background-position-x: 100%;
@@ -400,18 +402,18 @@ justify-content: center;
     
     }
     .Servicios{
-     background-image: url(../assets/img/Group26.png);
+     background-image: url("../assets/img/Group26.png");
      background-size: cover;
      background-position-y: 100%;
      background-repeat: no-repeat;
     }
     .Contactos{
-     background-image: url(../assets/img/Group26.png);
+     background-image: url("../assets/img/Group26.png");
      background-size: cover;
      background-position-y: 100%;
      background-repeat: no-repeat;
     }
- 
+ */
    
     .SeccQuienes{
     height: 40%;
@@ -539,32 +541,32 @@ justify-content: center;
 
         }
         .Quienes{
-          background-image: url(../assets/img/Group26.png);
+       /*   background-image: url("../assets/img/Group26.png");
           background-size: cover;
           background-position-y: 100%;
-          background-repeat: no-repeat;
+          background-repeat: no-repeat;*/
           min-height: 100vh;
         }
-        .Producto{
-         background-image: url(../assets/img/Group27.png);
+      /*  .Producto{
+         background-image: url("../assets/img/Group26.png");
          background-size: cover;
          background-position-y: 100%;
          background-repeat: no-repeat;
         }
         .Servicios{
-         background-image: url(../assets/img/Group26.png);
+         background-image: url("../assets/img/Group26.png");
          background-size: cover;
          background-position-y: 100%;
          background-repeat: no-repeat;
         }
         .Contactos{
-         background-image: url(../assets/img/Group26.png);
+         background-image: url("../assets/img/Group26.png");
          background-size: cover;
          background-position-y: 100%;
          background-repeat: no-repeat;
         }
      
-        
+        */
 .Producto{
   /*background-color:  var(--main-fondo);*/
 
