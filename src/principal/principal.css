@@ -63,6 +63,7 @@ left: 0;
 right: 0;
 overflow: hidden;
 justify-content: space-between;
+padding-right: 8px;
 }
 .MenuFalse {
    background-color: var(--main-menu1);
@@ -250,9 +251,7 @@ place-items: center;
   width: 500px;
   height: auto;
   bottom: 0;
-  animation-iteration-count: infinite;
-  animation-duration: 1s;
-  animation-name:visibles;
+  
   }
 .Producto{
 
@@ -428,7 +427,7 @@ justify-content: center;
     }
     .img1{
       top: 0;
-      height: 300px;
+      height: 350px;
       width: auto;
     }
     .Logo{
@@ -441,7 +440,7 @@ justify-content: center;
       padding: 10px;
       cursor: pointer;
       float: right;
-      margin-right: 8px;
+     
       display: initial;
         }
         
@@ -456,7 +455,7 @@ justify-content: center;
           flex-direction: column;
           top: 0;
           right: 0;
-          
+          margin-right: 0;
           text-align: center;
           transition: .5s;
 
@@ -493,7 +492,7 @@ justify-content: center;
     
     }
     .img1{
-      height: 200px;
+      height: 250px;
       width: auto;
     }
     .Logo{
@@ -505,7 +504,6 @@ justify-content: center;
       padding: 10px;
       cursor: pointer;
       float: right;
-      margin-right: 8px;
       display: initial;
         }
         .Menu{
@@ -517,7 +515,7 @@ justify-content: center;
         .OptionShow{
           position: fixed;
           width: 60%;
-          background-color: rgb(32, 32, 32);
+          background-color: var(--side-bar);
           padding-top: 60px;
           height: 100%;
           display: flex;
