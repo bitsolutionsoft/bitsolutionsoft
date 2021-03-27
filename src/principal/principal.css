@@ -319,8 +319,9 @@ justify-content: center;
  
   font-size: 18px;
   top: 0;
-  padding-left: 10px;
+  padding-left: 15px;
   padding-right: 10px;
+
   
   color:var(--main-texto);
   text-align: left;
