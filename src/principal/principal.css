@@ -161,14 +161,16 @@ animation-name:rotate;*/
 }
 @keyframes visibles {
   0% {
-    opacity: 0.5;
+    
+    transform: translateY(0px);
   }
   50% {
-    opacity: 0.7;
+    
+    transform: translateY(10px);
   }
   100% {
-    opacity: 1;
-    transform: translateX(-0px);
+    
+    transform: translateY(0px);
   }
 }
 @keyframes rotate{
@@ -248,7 +250,9 @@ place-items: center;
   width: 500px;
   height: auto;
   bottom: 0;
-
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  animation-name:visibles;
   }
 .Producto{
 
