@@ -105,6 +105,7 @@ setoptMenu(opcion)
         */}
          <p className="Title">{titulo}</p> 
          </div>
+        
         <ul className={optMenu}>
   
   <li><a href="#Quienes" className={numOp === 1 ? 'activeOp' : ''}  onClick={()=>active(1)} >¿Quienes somos?</a></li>
@@ -113,6 +114,7 @@ setoptMenu(opcion)
   <li><a href="#Contactos" className={numOp === 4 ? 'activeOp' : ''}  onClick={()=>active(4)}>Contactos</a></li>
 
 </ul>
+
 <FaBars size={30} color={colorIcon} className="ButtonMenu" onClick={()=>toogleMenu("Option OptionShow")}/>
 
 

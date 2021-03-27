@@ -156,7 +156,7 @@ place-items: center;
   background-color: var(--main-fondoCard);
  border-radius: 5px;
  
- margin: 20px;
+ margin: 10px;
  
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.23), 0 6px 20px 0 rgba(0, 0, 0, 0.23);
 }
@@ -166,7 +166,7 @@ place-items: center;
   height: 390px;
  background-color: var(--main-fondoCard);
  
- margin: 20px;
+ margin: 10px;
   border-radius: 5px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.23), 0 6px 20px 0 rgba(0, 0, 0, 0.23);
  
