@@ -8,7 +8,7 @@ import './principal.css';
 import Producto from './../productos/Producto';
 import Servicios from './../servicios/Servicios';
 
-const colorIcon="#000";
+const colorIcon="#c7c7c7";
 
 function Principal() {
   const [click, setclick] = useState(false);
@@ -171,7 +171,7 @@ setoptMenu(opcion)
          <FaPhoneAlt size={50} color={colorIcon} />
          </a>
           <p>
-            3344-5566 / 4433-9080
+            3344-5566 <br/> 4433-9080
           </p>
           </div>
           <div className="seccCon">
