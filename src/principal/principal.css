@@ -57,18 +57,18 @@ background: #d4d4d4;
 display: flex;
 flex-direction: row;
 background-color: var(--main-menu);
-
 height: 50px;
-color: rgb(29, 29, 29);
-
 position: fixed;
 left: 0;
 right: 0;
-
 overflow: hidden;
-
 justify-content: space-between;
 }
+.MenuFalse {
+   background-color: var(--main-menu1);
+  
+  }
+
 .Title{
   margin-top: 0px;
   margin-bottom: 0px;
@@ -246,7 +246,7 @@ place-items: center;
 
 .img1{
   width: 500px;
-  height: 500px;
+  height: auto;
   bottom: 0;
 
   }
@@ -285,7 +285,7 @@ justify-content: space-around;
  
 }
 .Contactos{
-  background-image: url("../assets/img/Grupo 22.svg");
+  background-image: url("../assets/img/Grupo 24.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: 100%;
@@ -316,6 +316,8 @@ justify-content: center;
   font-weight: 400;
   font-size: 18px;
   top: 0;
+  padding-left: 10px;
+  padding-right: 10px;
   
   color:var(--main-texto);
   text-align: left;
@@ -337,6 +339,7 @@ animation-duration: 4s;*/
   color:var(--main-texto1);
   font-size:  20px;
   width: 98%;
+  padding: 10px;
 }
 
 .containCon{
@@ -393,27 +396,6 @@ align-items: flex-end;
 align-content: center;
 justify-content: center;
     }
-  /*  .Producto{
-     background-image: url("../assets/img/Group26.png");
-     background-size: cover;
-     background-position-y: 100%;
-     background-position-x: 100%;
-     background-repeat: no-repeat;
-    
-    }
-    .Servicios{
-     background-image: url("../assets/img/Group26.png");
-     background-size: cover;
-     background-position-y: 100%;
-     background-repeat: no-repeat;
-    }
-    .Contactos{
-     background-image: url("../assets/img/Group26.png");
-     background-size: cover;
-     background-position-y: 100%;
-     background-repeat: no-repeat;
-    }
- */
    
     .SeccQuienes{
     height: 40%;
@@ -464,6 +446,7 @@ justify-content: center;
           height: 100%;
           display: flex;
           flex-direction: column;
+          top: 0;
           right: 0;
           margin-right: 0;
           text-align: center;

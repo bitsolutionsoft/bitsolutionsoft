@@ -1,6 +1,6 @@
 import {useEffect, useState} from 'react'
 import logo from '../assets/img/Recurso9.svg';
-import img1 from '../assets/img/img1.png';
+import img1 from '../assets/img/logo.svg';
 import {FaPhoneAlt,FaFacebookSquare,FaWhatsapp,FaRegEnvelope,FaBars} from 'react-icons/fa';
 import './principal.css';
 
@@ -8,7 +8,8 @@ import './principal.css';
 import Producto from './../productos/Producto';
 import Servicios from './../servicios/Servicios';
 
-const colorIcon="darkmagenta";
+const colorIcon="#000";
+
 function Principal() {
   const [click, setclick] = useState(false);
   const [navBar, setnavBar] = useState(true);
@@ -35,25 +36,30 @@ toogleMenu("Option OptionHide")
       case 1:
        // settitulo("Codesk")
       //  setbackNav("Menu QuinesActive");
+      setnavBar(true);
         setnumOp(1)
         break;
         case 2:
           setnumOp(2);
+          setnavBar(false);
       //    setbackNav("Menu ProductoActive")
         //  settitulo("Producto")
           break;
           case 3:
         //setbackNav("Menu ServicioActive")
             setnumOp(3);
+            setnavBar(false);
           //  settitulo("Servicios")
             break;
             case 4:
             //  settitulo("Conctatos")
         //      setbackNav("Menu ContactoActive")
               setnumOp(4);
+              setnavBar(false);
               break;
             default:
               settitulo("Codesk")
+              setnavBar(true);
               setnumOp(1);
      //         setbackNav("Menu");
               break;
@@ -62,8 +68,10 @@ toogleMenu("Option OptionHide")
 }
 
   window.addEventListener('resize', showButton);
+
   const ChangeColor=()=>{
     const currentScrollTop=window.scrollY;
+    
     if(currentScrollTop < lastScrollTop){
       setnavBar(true);
     }else {
@@ -90,9 +98,11 @@ setoptMenu(opcion)
   return (
     <div className="contain">
    
-    <div className={navBar ? "Menu" : "MenuFalse"}>
+    <div className={navBar ? "Menu" : "Menu MenuFalse"}>
       <div className="ItemTitle">
+        {/** 
     <img src={logo} className="Logo" alt="logo" />
+        */}
          <p className="Title">{titulo}</p> 
          </div>
         <ul className={optMenu}>
