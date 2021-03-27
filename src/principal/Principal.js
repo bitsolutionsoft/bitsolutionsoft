@@ -8,7 +8,8 @@ import './principal.css';
 import Producto from './../productos/Producto';
 import Servicios from './../servicios/Servicios';
 
-const colorIcon="#c7c7c7";
+const colorIcon="#4312a0";
+const colorMenu="#c7c7c7";
 
 function Principal() {
   const [click, setclick] = useState(false);
@@ -115,7 +116,7 @@ setoptMenu(opcion)
 
 </ul>
 
-<FaBars size={30} color={colorIcon} className="ButtonMenu" onClick={()=>toogleMenu("Option OptionShow")}/>
+<FaBars size={30} color={colorMenu} className="ButtonMenu" onClick={()=>toogleMenu("Option OptionShow")}/>
 
 
         </div>  
