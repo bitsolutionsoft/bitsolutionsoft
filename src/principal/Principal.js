@@ -18,7 +18,7 @@ function Principal() {
   const [Button, setButton] = useState(true);
   const [numOp, setnumOp] = useState(1)
   const [backNav, setbackNav] = useState("Menu")
-  const [titulo, settitulo] = useState("Codesk")
+  const [titulo, settitulo] = useState("BitSolutionSoft")
   const [optMenu, setoptMenu] = useState('Option OptionHide')
   
 
