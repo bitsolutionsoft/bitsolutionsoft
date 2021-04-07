@@ -131,10 +131,11 @@ setoptMenu(opcion)
         </p>
 
         <p className="Desc">
-          Somos una empresa de desarrollo de sistemas 
-          informaticos, sitios web y aplicaciones móviles 
-          con las últimas tecnologías, brindando a nuestros clientes
-          las herramientas necesarias para hacer crecer su negocio.
+        Somos una empresa en el desarrollo de sistemas 
+        informáticos, sitios web y aplicaciones 
+        móviles en base a las ultimas tecnologías, 
+        brindando a nuestros clientes las herramientas necesarias 
+        para competir en el mercado digital y hacer crecer su negocio.
         </p>
         </div>
          </div>
@@ -172,11 +173,14 @@ setoptMenu(opcion)
          <FaPhoneAlt size={50} color={colorIcon} />
          </a>
           <p>
-            3344-5566 <br/> 4433-9080
+            3344-5566 <br/> 36211663
           </p>
           </div>
           <div className="seccCon">
             <a href="https://api.whatsapp.com/send?phone=+50236211663">
+         <FaWhatsapp size={50} color={colorIcon}/>
+         </a>
+         <a href="https://api.whatsapp.com/send?phone=+50236211663">
          <FaWhatsapp size={50} color={colorIcon}/>
          </a>
           </div>
