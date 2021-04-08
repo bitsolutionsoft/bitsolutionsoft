@@ -173,11 +173,11 @@ setoptMenu(opcion)
          <FaPhoneAlt size={50} color={colorIcon} />
          </a>
           <p>
-            3344-5566 <br/> 36211663
+            3621-1663 <br/> 3072-5664
           </p>
           </div>
           <div className="seccCon">
-            <a href="https://api.whatsapp.com/send?phone=+50236211663">
+            <a href="https://api.whatsapp.com/send?phone=+50230725664">
          <FaWhatsapp size={50} color={colorIcon}/>
          </a>
          <a href="https://api.whatsapp.com/send?phone=+50236211663">
@@ -185,7 +185,7 @@ setoptMenu(opcion)
          </a>
           </div>
           <div className="seccCon">
-            <a href=" " >
+            <a href="https://www.facebook.com/Bit-SolutionSoft-109762243909910" >
           <FaFacebookSquare size={50} color={colorIcon}/>
          </a>
           </div>
