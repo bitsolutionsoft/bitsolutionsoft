@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/bitsolutionsoft/static/css/main.10c0d475.chunk.css",
-    "main.js": "/bitsolutionsoft/static/js/main.d260efdf.chunk.js",
-    "main.js.map": "/bitsolutionsoft/static/js/main.d260efdf.chunk.js.map",
+    "main.js": "/bitsolutionsoft/static/js/main.a65c6259.chunk.js",
+    "main.js.map": "/bitsolutionsoft/static/js/main.a65c6259.chunk.js.map",
     "runtime-main.js": "/bitsolutionsoft/static/js/runtime-main.6e335867.js",
     "runtime-main.js.map": "/bitsolutionsoft/static/js/runtime-main.6e335867.js.map",
     "static/js/2.b9d8d8e1.chunk.js": "/bitsolutionsoft/static/js/2.b9d8d8e1.chunk.js",
@@ -23,6 +23,6 @@
     "static/js/runtime-main.6e335867.js",
     "static/js/2.b9d8d8e1.chunk.js",
     "static/css/main.10c0d475.chunk.css",
-    "static/js/main.d260efdf.chunk.js"
+    "static/js/main.a65c6259.chunk.js"
   ]
 }
