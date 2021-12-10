@@ -131,10 +131,10 @@ setoptMenu(opcion)
         </p>
 
         <p className="Desc">
-        Somos una empresa en el desarrollo de sistemas 
-        informáticos, sitios web y aplicaciones 
-        móviles en base a las ultimas tecnologías, 
-        brindando a nuestros clientes las herramientas necesarias 
+        Somos una empresa especializada en el desarrollo de sistemas
+        informáticos, sitios web y aplicaciones móviles 
+        con la tecnología más reciente, brindando 
+        a nuestros clientes las herramientas necesarias 
         para competir en el mercado digital y hacer crecer su negocio.
         </p>
         </div>
@@ -189,11 +189,12 @@ setoptMenu(opcion)
           <FaFacebookSquare size={50} color={colorIcon}/>
          </a>
           </div>
+         {/** 
           <div className="seccCon">
             <a href=" ">
           <FaRegEnvelope size={50} color={colorIcon}/>
          </a>
-          </div>
+          </div>*/}
          
         </div>
     
